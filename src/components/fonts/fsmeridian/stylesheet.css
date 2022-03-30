@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'FS Meridian';
+    src: url('FSMeridian-Thin.eot');
+    src: local('FS Meridian Thin'), local('FSMeridian-Thin'),
+        url('FSMeridian-Thin.eot?#iefix') format('embedded-opentype'),
+        url('FSMeridian-Thin.woff2') format('woff2'),
+        url('FSMeridian-Thin.woff') format('woff'),
+        url('FSMeridian-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Meridian';
+    src: url('FSMeridian-Medium.eot');
+    src: local('FS Meridian Medium'), local('FSMeridian-Medium'),
+        url('FSMeridian-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FSMeridian-Medium.woff2') format('woff2'),
+        url('FSMeridian-Medium.woff') format('woff'),
+        url('FSMeridian-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Meridian';
+    src: url('FSMeridian-Bold.eot');
+    src: local('FS Meridian Bold'), local('FSMeridian-Bold'),
+        url('FSMeridian-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FSMeridian-Bold.woff2') format('woff2'),
+        url('FSMeridian-Bold.woff') format('woff'),
+        url('FSMeridian-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Meridian';
+    src: url('FSMeridian-Regular.eot');
+    src: local('FS Meridian Regular'), local('FSMeridian-Regular'),
+        url('FSMeridian-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FSMeridian-Regular.woff2') format('woff2'),
+        url('FSMeridian-Regular.woff') format('woff'),
+        url('FSMeridian-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Meridian';
+    src: url('FSMeridian-Light.eot');
+    src: local('FS Meridian Light'), local('FSMeridian-Light'),
+        url('FSMeridian-Light.eot?#iefix') format('embedded-opentype'),
+        url('FSMeridian-Light.woff2') format('woff2'),
+        url('FSMeridian-Light.woff') format('woff'),
+        url('FSMeridian-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

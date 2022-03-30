@@ -1369,7 +1369,7 @@ class SuggestMeal extends Component {
                  mealName={this.state.mealName} mealImage={this.state.mealImage}
                  categories={this.state.suggestedCategories}
                   prepTime={this.state.prepTime} cookTime={this.state.cookTime}
-                  mealName={this.state.mealName} serves={this.state.servings}
+                  serves={this.state.servings}
                   ingredientsList = {this.state.ingredientStrings} utensilsList={this.state.suggestedUtensils}
                   instructionChunk1={this.state.instructionChunk1} instructionChunk2={this.state.instructionChunk2}
                   instructionChunk3={this.state.instructionChunk3} instructionChunk4={this.state.instructionChunk4}
