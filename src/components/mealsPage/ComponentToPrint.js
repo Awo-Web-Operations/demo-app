@@ -77,43 +77,48 @@ class ComponentToPrint extends React.Component {
                 <div>Connect with us @chop_soul_full</div>
               </div> */}
                 <div className="print">
-                  <div className="print_col_1">
-                    <img className="print_main_logo_img" src={this.props.mealImageData} ></img>
+                  <div className="print_page_1">
+                    <div className="print_page_1_row_1">
+                      <img className="print_main_logo_img" src={this.props.mealImageData} ></img>
+                    </div>
+                    <div className="print_page_1_row_2">
+                      <div className="print_page_1_col_1">
+                        <div className="print_top">
+                          <h2>Meal: {this.props.mealName}</h2>
+                        </div>
+                        <div className="meal_details">
+                          <div className="col_2">
+                            <div className="meal_detail">
+                              <h2>Prep Time:</h2>
+                              <p>{this.props.prepTime}</p>
+                            </div>
+                            <div className="meal_detail">
+                              <h2>Cook Time:</h2>
+                              <p>{this.props.cookTime}</p>
+                            </div>
+                          </div>
+                          <div className="col_2">
+                            <div className="meal_detail">
+                              <h2>Serves:</h2>
+                              <p>{this.props.serves}</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="print_details">
+                          <div className="print_detail">
+                            <h2>Utensils Needed</h2>
+                            <ul>{displayedUtensils}</ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="print_col_1_detail">
+                        <h2>Ingredients</h2>
+                        <ul>{displayedIngredients}</ul>
+                      </div>
+                    </div>
                   </div>
-                  <div className="print_col_2">
-                    <div className="print_top">
-                      <h2>Meal: {this.props.mealName}</h2>
-                    </div>
-                    <div className="meal_details">
-                      <div className="col_2">
-                        <div className="meal_detail">
-                          <h2>Prep Time:</h2>
-                          <p>{this.props.prepTime}</p>
-                        </div>
-                        <div className="meal_detail">
-                          <h2>Cook Time:</h2>
-                          <p>{this.props.cookTime}</p>
-                        </div>
-                      </div>
-                      <div className="col_2">
-                        <div className="meal_detail">
-                          <h2>Serves:</h2>
-                          <p>{this.props.serves}</p>
-                        </div>
-                      </div>
-                    </div>
-                      
+                  <div className="print_page_2">
                     <div className="print_body">
-                      <div className="print_details">
-                        <div className="print_detail">
-                          <h2>Ingredients</h2>
-                          <ul>{displayedIngredients}</ul>
-                        </div>
-                        <div className="print_detail">
-                          <h2>Utensils Needed</h2>
-                          <ul>{displayedUtensils}</ul>
-                        </div>
-                      </div>
                       <div className="meal_instructions">
                       {(this.props.instructionChunk1.title || this.props.instructionChunk2.title) &&
                         <div className="meal_instruction"> 
@@ -171,10 +176,13 @@ class ComponentToPrint extends React.Component {
                         {this.props.tips}
                         
                       </div>
+                    </div>
+                    <div className='tips'>
+                      <h2>Tips:</h2>
+                    </div>
                       <div className='footer'>
                         <h2>Connect with us @chop_soul_full</h2>
                       </div>
-                    </div>
                   </div>
                   
                 </div>

@@ -31,7 +31,7 @@ html{
     grid-template-rows: 100%;
     animation: slidefromright .3s ease-in-out;
     border-radius: 2px;
-    grid-template-rows: 755px 1fr;
+    grid-template-rows: 790px 790px;
     overflow: hidden;
 }
 
@@ -103,12 +103,13 @@ html{
 }
 
 .print_top > h2 {
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat SemiBold";
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 30px;
     color: #222321;
+    text-transform: capitalize;
 }
 
 .print_top > h3 {
@@ -123,8 +124,8 @@ html{
 }
 
 .print_main_logo_img{
-    width: 90%;
-    height: 755px;
+    width: 100%;
+    height: 555px;
     image-rendering: -webkit-optimize-contrast;
 }
 
@@ -136,11 +137,17 @@ html{
     display: none;
 }
 
+.print_page_2{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr max-content;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
 .print_body{
     display: grid;
     grid-gap: 2rem;
-
-    border-top: 1px solid #444;
     padding-top: 1rem;
 }
 
@@ -181,8 +188,6 @@ html{
     grid-auto-flow: column;
     grid-template-columns: 1fr;
     align-content: start;
-    border-bottom: 1px solid #DADCDC;
-    padding-bottom: 1rem;
 }
 
 .print_detail > ul > li > p{
@@ -199,6 +204,66 @@ html{
     font-size: 14px;
 }
 
+.print_col_1_detail{
+    display: grid;
+    grid-gap: 1rem;
+    align-self: start;
+    height: 25rem;
+    width: 15rem;
+    margin-top: -13rem;
+    align-content: start;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    box-shadow: -1px 1px 2px #DADCDC;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.print_col_1_detail > h2{
+    border-bottom: 1px solid #444;
+    font-family: "Montserrat SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: start;
+    color: #2B2B2B;
+}
+
+.print_col_1_detail > ul{
+    list-style-type: none;
+    text-align: start;
+    display: grid;
+    grid-gap: 6px;
+    justify-content: start;
+}
+
+.print_col_1_detail > ul > li{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    align-content: start;
+}
+
+.print_col_1_detail > ul > li > p{
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.print_col_1_detail > ul > li > h4{
+    font-family: "Montserrat SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
 .print_col_1{
     width: 100%;
     height: 100%;
@@ -209,6 +274,31 @@ html{
 
 .print_col_2{
     margin: 1rem;
+    overflow-y: scroll;
+}
+
+.print_page_1{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.print_page_1_row_1{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+.print_page_1_row_2{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 15rem;
+    grid-gap: 1rem;
+    margin-right: 0;
+    position: relative;
+}
+
+.print_page_1_col_1{
     overflow-y: scroll;
 }
 
@@ -330,10 +420,38 @@ html{
     grid-template-columns: 2rem 1fr;
 }
 
+.tips{
+    display: grid;
+    height: 20rem;
+    width: 20rem;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444;
+    align-self: end;
+}
+
+.tips >h2{
+    font-family: "Montserrat SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: start;
+    color: #2B2B2B;
+}
+
+@media print{
+    @page{
+        size: landscape;
+    }
+}
+
 .footer{
     display: grid;
     border-top: 1px solid #444;
     justify-items: end;
+    align-self: end;
 }
 
 .footer > h2{
